@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ip:port/postgre
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      connection-timeout: 30000
+      maximum-pool-size: 20
+      max-lifetime: 1800000
+      minimum-idle: 5
+  redis:
+    database: 0
+    host: host
+    password: password
+    port: 6379

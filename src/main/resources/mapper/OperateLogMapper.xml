@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.toponym.mapper.OperateLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.toponym.entity.bean.OperateLog">
+        <id column="id" property="id" />
+        <result column="operate_type" property="operateType" />
+        <result column="operate_name" property="operateName" />
+        <result column="login_ip" property="loginIp" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user" property="createUser" />
+        <result column="create_name" property="createName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, operate_type, operate_name, login_ip, create_time, create_user, create_name
+    </sql>
+
+</mapper>

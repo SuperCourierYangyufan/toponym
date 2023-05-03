@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.toponym.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.toponym.entity.bean.Menu">
+        <id column="id" property="id" />
+        <result column="menu_name" property="menuName" />
+        <result column="menu_address" property="menuAddress" />
+        <result column="menu_avatar_icon" property="menuAvatarIcon" />
+        <result column="menu_description" property="menuDescription" />
+        <result column="parent_menu_id" property="parentMenuId" />
+        <result column="parent_menu_name" property="parentMenuName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, menu_name, menu_address, menu_avatar_icon, menu_description, parent_menu_id, parent_menu_name, create_time, update_time, create_user, update_user
+    </sql>
+
+</mapper>
